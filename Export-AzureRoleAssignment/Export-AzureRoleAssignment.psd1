@@ -103,11 +103,11 @@ PrivateData = @{
         # Tags applied to this module. These help with module discovery in online galleries.
         Tags = @(
             'Azure',
-            'Azure DevOps',
-            'Azure Pipeline',
-            'Azure RBAC'
-            'Azure Resource Groups',
-            'Azure Role Assignments'
+            'DevOps',
+            'Pipeline',
+            'RBAC'
+            'ResourceGroups',
+            'RoleAssignments'
         )
 
         # A URL to the license for this module.
