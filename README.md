@@ -2,11 +2,9 @@
 
 Export role assignments, resource groups, and resource group tags from Azure to YAML or JSON files.
 
-The files are human readable (i.e. Names not GUIDs).
-
-The folder structure separates the resource group files by subscription
-
-And role assignments scoped at subscription, management group, or root level are also captured.
+- The files are human readable (i.e. names not GUIDs).
+- The folder structure separates the resource group files by subscription
+- Files are also created that capture the role assignments scoped at subscription, management group, or root level.
 
 ## Example 1: Export to YAML Files
 
@@ -16,7 +14,7 @@ Export role assignments, for all subscriptions you have access to, to YAML files
 Export-AzureRoleAssignment
 ```
 
-### Output folder and file layout
+### Example output files and folders
 
 ```
 \managementGroups\OSX-MG-MAIN\managementgroup.yaml
@@ -79,13 +77,15 @@ tags:
   Environment: Sand Box
 ```
 
+## Notes
 
-> [!NOTE]  
-> This module enables exporting to code which is useful for visibility and auditing of access to Azure.
-> 
-> The "Osservante RBAC Extension" has export, import and compare modes which enable you to easily manage all your Azure resource groups and role based access assignments (RBAC) in code.
-> 
-> It is available in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Osservante.OsservanteRBAC)
+This module enables exporting to code which is useful for visibility and auditing of access to Azure. 
+
+The files captured can also be used as a starting point for deploying role assignments as code.
+
+The functionality is a subset of what the "Osservante RBAC Extension" has to offer.  In addition to a similar "export mode", it also has import and compare modes, which enable you to easily manage all your Azure resource groups and role based access assignments (RBAC) in code.
+ 
+It is available in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Osservante.OsservanteRBAC)
 
 ## Syntax
 
